@@ -10,8 +10,9 @@ export const KeywordView = Backbone.View.extend({
   },
 
   handleListingThumb: function(evt){
-    console.log(evt.target)
     let listingThumbEl = evt.currentTarget
+    console.log(listingThumbEl.dataset.listingid)
+
     // console.log(listingThumbEl.dataset.listingid)
     window.location.hash = `details/${listingThumbEl.dataset.listingid}`
   },
@@ -27,10 +28,11 @@ export const KeywordView = Backbone.View.extend({
 
   _keywordHtml: function(keyWordsColl){
     let keywordsData = keyWordsColl.map( function(keyWordsObj){
-      // console.log(keyWordsObj)
+      console.log(keyWordsObj)
     return`
         <div class="col-sm-12 col-md-4">
-          <div class="thumbnail listing-thumb">
+          <div class="thumbnail listing-thumb" data-listingid="${keyWordsObj.get('listing_id')}">
+
             <img src="${keyWordsObj.get('Images')[0].url_170x135}" alt="...">
             <div class="caption">
               <h5>${keyWordsObj.get('title')}</h5>

@@ -53,7 +53,7 @@ const AppRouter = Backbone.Router.extend({
     let keyWordsColl = new ListingsCollection(keyWord)
     keyWordsColl.fetch().then( function(serverRes){
       let keyWordsArray = serverRes.results
-      console.log(keyWordsArray)
+      // console.log(keyWordsArray)
       let view = new KeywordView()
       view.render(keyWordsColl)
     })
