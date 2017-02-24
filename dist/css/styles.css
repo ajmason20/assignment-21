@@ -1,11 +1,103 @@
 * {
   box-sizing: border-box; }
 
-body {
-  background: limegreen; }
+#app-container > * {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px; }
 
-h2 {
-  color: maroon;
-  border-bottom: 4px solid maroon; }
+.etsy-top {
+  width: 100%;
+  display: inline-block; }
+
+.etsy-top img {
+  width: 8%;
+  padding-left: 1%; }
+
+.etsy-top i {
+  font-size: 40px;
+  margin-top: 4px;
+  float: right;
+  padding-right: 1%; }
+
+.nav-container {
+  border-top: #bbb thin solid;
+  border-bottom: #bbb thin solid;
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.top-nav a {
+  text-decoration: none;
+  color: #bbb;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.listing-container {
+  max-width: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 50px; }
+
+.listing-thumb {
+  height: 250px;
+  font-size: small; }
+
+.listing-thumb img {
+  width: 100%; }
+
+.listing-thumb p {
+  font-size: 14px;
+  color: #bbb;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.listing-thumb h5 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.side-bar {
+  width: 15%;
+  margin-left: 200px; }
+
+.single-page-display {
+  margin-top: 20px;
+  margin-left: 20%; }
+
+.single-page-display > * {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top; }
+
+.single-listings-column__left {
+  width: 40%;
+  font-size: medium; }
+
+.single-listings-column__right {
+  width: 20%;
+  margin-left: 20px;
+  font-size: medium; }
+
+.single-listing-pic__main img {
+  width: 100%; }
+
+.single-listing-pic__small {
+  margin-left: 25%;
+  margin-top: 20px; }
+
+.single-listing-pic__small img {
+  width: 20%;
+  margin-left: 10px; }
+
+.item-description {
+  line-height: 2; }
+
+.materials {
+  background-color: #ddd; }
+
+.shipping {
+  background-color: #ddd; }
 
 /*# sourceMappingURL=styles.css.map*/
